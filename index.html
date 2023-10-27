@@ -1,0 +1,13 @@
+<!doctype html>
+<html>
+  <body>
+    <h1>My First Heading</h1>
+    <p>My first paragraph.</p>
+    <script src="https://unpkg.com/htmx.org@1.9.6"></script>
+    <!-- have a button POST a click via AJAX -->
+    <button hx-post="/clicked" hx-target="#csere">Click Me</button>
+    <div id="csere">
+      Hello World!
+    </div>
+  </body>
+</html>

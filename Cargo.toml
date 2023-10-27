@@ -6,8 +6,10 @@ edition = "2021"
 # See more keys and their definitions at https://doc.rust-lang.org/cargo/reference/manifest.html
 
 [dependencies]
+askama = { version = "0.12.1", features = ["with-axum", "markdown", "serde", "serde-json"] }
 axum = "0.6.20"
 clap = { version = "4.4.6", features = ["env", "derive"] }
+rand = "0.8.5"
 serde = { version = "1.0.189", features = ["derive"] }
 serde_json = "1.0.107"
 tokio = { version = "1.33.0", features = ["full"] }
